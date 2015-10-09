@@ -57,8 +57,7 @@ def decryptAll(ciphertext):
 		print p
 		P = P + p
 		D = D + d
-	print 'D:', D
-	print 'P:', P
+	print 'decrypted ticket:', P
 	return D, P
 	
 
@@ -100,7 +99,6 @@ def decryptTwoBlock(c1c2):
 	# print 'DC2', DC2
 	P2 = hex(int(DC2, 16) ^ int(c1, 16))[2:-1].decode('hex')
 	# print 'P2', P2
-	print 'decrypted ticket:', P2
 	return DC2, P2 
 
 # input: integer between [0, 255] 
