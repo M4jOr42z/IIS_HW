@@ -54,7 +54,6 @@ def decryptAll(ciphertext):
 	for i in range(8):
 		c1c2 = ''.join(c_blocks[i:i+2])
 		d, p = decryptTwoBlock(c1c2)
-		print p
 		P = P + p
 		D = D + d
 	print 'decrypted ticket:', P
